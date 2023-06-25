@@ -1,0 +1,17 @@
+{
+  "home.buttons.play": "Play",
+  "home.buttons.options": "Options",
+  "home.buttons.credits": "Credits",
+  "home.buttons.quit": "Quit",
+  "difficulty.easy": "Easy",
+  "difficulty.medium": "Medium",
+  "difficulty.hard": "Hard",
+  "mode.one-players": "1 player",
+  "mode.two-players": "2 players",
+  "end.single-player.win": "Winner!",
+  "end.single-player.lose": "You lose!",
+  "end.draw": "Draw!",
+  "end.multi-player.win": "Player {{player}} win!",
+  "end.buttons.restart": "Restart",
+  "end.buttons.quit": "Main menu"
+}
