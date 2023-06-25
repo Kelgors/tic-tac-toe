@@ -21,13 +21,13 @@ export function SelectDifficultyPage() {
     <AppContainer>
       <AppTitle />
       <Stack spacing={2}>
-        <Button onClick={() => selectDifficulty('easy')} variant="outlined">
+        <Button onClick={() => selectDifficulty('easy')}>
           <Trans>difficulty.easy</Trans>
         </Button>
-        <Button onClick={() => selectDifficulty('medium')} variant="outlined">
+        <Button onClick={() => selectDifficulty('medium')}>
           <Trans>difficulty.medium</Trans>
         </Button>
-        <Button onClick={() => selectDifficulty('hard')} variant="outlined">
+        <Button onClick={() => selectDifficulty('hard')}>
           <Trans>difficulty.hard</Trans>
         </Button>
       </Stack>

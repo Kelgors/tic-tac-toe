@@ -1,1 +1,18 @@
-{}
+{
+  "app.title": "Morpion",
+  "back": "Retour",
+  "home.buttons.play": "Jouer",
+  "home.buttons.options": "Options",
+  "home.buttons.credits": "Crédits",
+  "difficulty.easy": "Facile",
+  "difficulty.medium": "Moyen",
+  "difficulty.hard": "Impossible",
+  "mode.one-players": "1 joueur",
+  "mode.two-players": "2 joueurs",
+  "end.single-player.win": "Gagné !",
+  "end.single-player.lose": "Perdu !",
+  "end.draw": "Egalité !",
+  "end.multi-player.win": "Joueur {{player}} a gagné !",
+  "end.buttons.restart": "Rejouer",
+  "end.buttons.quit": "Retour au menu"
+}

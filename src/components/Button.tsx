@@ -7,5 +7,5 @@ const LinkBehavior = React.forwardRef<any, Omit<RouterLinkProps, 'to'> & { href:
 ));
 
 export function Button(props: ButtonProps) {
-  return <MuiButton {...props} LinkComponent={LinkBehavior} />;
+  return <MuiButton variant="outlined" {...props} LinkComponent={LinkBehavior} />;
 }

@@ -1,8 +1,9 @@
-import { Box, Container, LinearProgress } from '@mui/material';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import LinearProgress from '@mui/material/LinearProgress';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AppTitle } from '../../components/AppTitle';
 import { wait } from '../../components/wait';
 import { Playground, TicTacToeValue, gameState } from '../../game/GameState';
 import { IOpponent } from '../../game/IOpponent';
@@ -74,7 +75,6 @@ export function PlayPage() {
   useEffect(
     function () {
       gameState.playground = playground;
-      console.dir(gameState);
       const winner = gameState.getWinner();
       if (winner || !gameState.hasNextMove()) {
         gameState.winner = winner;
@@ -85,8 +85,7 @@ export function PlayPage() {
   );
 
   return (
-    <Container maxWidth="sm">
-      <AppTitle />
+    <Container maxWidth="sm" sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
       <Grid container columns={3}>
         {playground.map(function (value, index) {
           return <PlayGridCell key={index} position={index + 1} content={value} onClick={onCellClicked} />;

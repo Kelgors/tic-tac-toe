@@ -14,10 +14,10 @@ export function SelectModePage() {
     <AppContainer>
       <AppTitle />
       <Stack spacing={2}>
-        <Button href="/select-difficulty" variant="outlined">
+        <Button href="/select-difficulty">
           <Trans>mode.one-players</Trans>
         </Button>
-        <Button href="/play" variant="outlined">
+        <Button href="/play">
           <Trans>mode.two-players</Trans>
         </Button>
       </Stack>

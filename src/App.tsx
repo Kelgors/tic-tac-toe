@@ -3,14 +3,14 @@ import './App.css';
 import { CreditsPage } from './pages/credits/CreditsPage';
 import { EndPage } from './pages/end';
 import { HomePage } from './pages/home';
-import { PlayPage } from './pages/play';
+import { PlayPage } from './pages/play/index';
 import { SelectDifficultyPage } from './pages/select-difficulty';
 import { SelectModePage } from './pages/select-mode';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/tictactoe">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/select-mode" element={<SelectModePage />} />

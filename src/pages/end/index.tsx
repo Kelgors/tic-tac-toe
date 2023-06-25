@@ -39,10 +39,10 @@ export function EndPage() {
       <AppTitle />
       <h2>{message}</h2>
       <Stack spacing={2}>
-        <Button href="/play" variant="outlined">
+        <Button href="/play">
           <Trans>end.buttons.restart</Trans>
         </Button>
-        <Button href="/" variant="outlined">
+        <Button href="/">
           <Trans>end.buttons.quit</Trans>
         </Button>
       </Stack>

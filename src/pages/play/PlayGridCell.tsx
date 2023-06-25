@@ -1,8 +1,28 @@
+import styled from '@emotion/styled';
 import CloseIcon from '@mui/icons-material/Close';
 import RadioButtonUnchecked from '@mui/icons-material/RadioButtonUnchecked';
-import { Icon } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import Icon from '@mui/material/Icon';
 import { useCallback, useMemo } from 'react';
+
+const Cell = styled(Grid)`
+  aspect-ratio: 1/1;
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(4),
+  &:nth-child(5) {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  &:nth-child(3),
+  &:nth-child(6) {
+    border-bottom: 1px solid black;
+  }
+  &:nth-child(7),
+  &:nth-child(8) {
+    border-right: 1px solid black;
+  }
+`;
 
 export type OnCellClickedEvent = {
   position: number;
@@ -37,13 +57,8 @@ export function PlayGridCell(props: PlayGridCellProps) {
   );
 
   return (
-    <Grid
-      item
-      xs={1}
-      sx={{ aspectRatio: '1/1', background: props.content === 'x' ? 'red' : 'blue' }}
-      onClick={!content ? onGridClicked : undefined}
-    >
+    <Cell item xs={1} onClick={!content ? onGridClicked : undefined}>
       {icon}
-    </Grid>
+    </Cell>
   );
 }
