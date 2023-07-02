@@ -1,21 +1,59 @@
 {
-  "short_name": "TicTacToe",
-  "name": "TicTacToe",
+  "short_name": "Tic Tac Toe",
+  "name": "Tic Tac Toe",
+  "description": "Make a line (row, column, diagonal) by placing your sign (cross or circle) in this two player game",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icons/pwa-64x64.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "icons/pwa-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "icons/pwa-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/playboard-1-480x640.png",
+      "sizes": "480x640",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Game board with some moves played"
+    },
+    {
+      "src": "screenshots/playboard-2-480x640.png",
+      "sizes": "480x640",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Game board with more moves played"
+    },
+    {
+      "src": "screenshots/end-1-480x640.png",
+      "sizes": "480x640",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "End screen and summary"
+    },
+    {
+      "src": "screenshots/menu-1-480x640.png",
+      "sizes": "480x640",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Main menu screen"
     }
   ],
   "start_url": "/index.html",
